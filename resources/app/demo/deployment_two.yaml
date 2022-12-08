@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: nginx2
-  name: nginx2
+    app: test2
+  name: test2
 spec:
   replicas: 1
   selector:
@@ -15,12 +15,12 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: nginx2
+        app: test2
     spec:
       containers:
-        - image: nginx2
-          name: nginx2
+        - image: nginx
+          name: test2
           ports:
-            - containerPort: 8080
+            - containerPort: 80
           resources: {}
 status: {}
