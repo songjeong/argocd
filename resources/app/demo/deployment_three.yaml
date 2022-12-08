@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: test3
-  name: test3
+    app: test5
+  name: test5
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test3
+      app: test5
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: test3
+        app: test5
     spec:
       containers:
         - image: nginx
-          name: test3
+          name: test5
           ports:
             - containerPort: 80
           resources: {}
