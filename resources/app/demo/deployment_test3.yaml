@@ -6,7 +6,7 @@ metadata:
     app: nginx-add3
   name: nginx-add3
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: nginx-add3
