@@ -6,7 +6,7 @@ metadata:
     app: nginx-add
   name: nginx-add
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-add
