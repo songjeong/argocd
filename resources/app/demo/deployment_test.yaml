@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: nginx_add
-  name: nginx_add
+    app: nginx-add
+  name: nginx-add
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx_add
+      app: nginx-add
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: nginx_add
+        app: nginx-add
     spec:
       containers:
         - image: nginx
